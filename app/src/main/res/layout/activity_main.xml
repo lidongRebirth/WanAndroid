@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/drawerlayout"
+
+    tools:context=".MainActivity"
+    android:fitsSystemWindows="true">
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<FrameLayout-->
+            <!--android:id="@+id/fl_container"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_above="@id/rg_main"-->
+            <!--android:layout_alignParentTop="true"></FrameLayout>-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/dp_0_5"-->
+            <!--android:layout_above="@id/rg_main"-->
+            <!--android:background="#BBBBBB" />-->
+
+        <!--<RadioGroup-->
+            <!--android:id="@+id/rg_main"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/dp_49"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/rb_home"-->
+                <!--android:layout_width="@dimen/dp_0"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:button="@null"-->
+                <!--android:checked="true"-->
+                <!--android:drawableTop="@drawable/rb_home_select"-->
+                <!--android:gravity="center"-->
+                <!--android:text="首页"-->
+                <!--android:textColor="@color/main_tab_text_selector"-->
+                <!--android:textSize="@dimen/sp_10" />-->
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/rb_officialAccount"-->
+                <!--android:layout_width="@dimen/dp_0"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:button="@null"-->
+                <!--android:drawableTop="@drawable/rb_account_select"-->
+                <!--android:gravity="center"-->
+                <!--android:text="公众号"-->
+                <!--android:textColor="@color/main_tab_text_selector"-->
+                <!--android:textSize="@dimen/sp_10" />-->
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/rb_third"-->
+                <!--android:layout_width="@dimen/dp_0"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:button="@null"-->
+                <!--android:drawableTop="@drawable/rb_account_select"-->
+                <!--android:gravity="center"-->
+                <!--android:text="项目"-->
+                <!--android:textColor="@color/main_tab_text_selector"-->
+                <!--android:textSize="@dimen/sp_10" />-->
+
+        <!--</RadioGroup>-->
+    <!--</RelativeLayout>-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="left"-->
+        <!--android:background="@color/white">-->
+        <!--<TextView-->
+            <!--android:text="你好"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+    <!--</LinearLayout>-->
+    <include layout="@layout/activity_main2"/>
+    <FrameLayout
+        android:id="@+id/fragment_sliding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:clickable="true"></FrameLayout>
+
+</android.support.v4.widget.DrawerLayout>

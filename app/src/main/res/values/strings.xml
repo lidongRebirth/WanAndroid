@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">WanAndroid</string>
+    <string name="btn_login">登录</string>
+    <string name="btn_register">注册</string>
+    <string name="register_text">还没有注册？去注册</string>
+    <!--账号限制-->
+    <string name="account_digits">0123456789qwertyuioplkjhgfdsazxcvbnm-_</string>
+    <!--密码限制-->
+    <string name="password_digits">0123456789qwertyuioplkjhgfdsazxcvbnm-_</string>
+
+    <string name="account_hint">请输入用户名</string>
+    <string name="password_hint">请输入密码</string>
+    <string name="checkpassword_hind">请确认密码</string>
+
+</resources>

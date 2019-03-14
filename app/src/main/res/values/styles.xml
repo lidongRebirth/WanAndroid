@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    
+
+
+    <!--密码输入框的样式-->
+    <style name="TextInputLayoutTheme">
+
+        <!--hint的颜色-->
+        <item name="android:textColorHint">#CDC5BF</item>
+        <!--没有获取焦点的下划线颜色-->
+        <item name="colorControlNormal">@color/gray</item>
+        <!--获取焦点的下划线颜色-->
+        <item name="colorControlActivated">@color/statusColor</item>
+        <!--点击时下划线的颜色-->
+        <item name="colorControlHighlight">@color/statusColor</item>
+
+    </style>
+
+    <style name="EssayTitleStyle">
+
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="ItemCollectionTextStyle">
+
+
+    </style>
+
+
+</resources>

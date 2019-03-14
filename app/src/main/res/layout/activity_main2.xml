@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<include layout="@layout/common_titlebar"-->
+        <!--android:id="@+id/titlebarlayout"/>-->
+    <LinearLayout
+        android:id="@+id/titlebarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/common_titlebar"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rg_main"
+        android:layout_below="@id/titlebarlayout">
+    </FrameLayout>
+<!--android:layout_alignParentTop="true"-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5"
+        android:layout_above="@id/rg_main"
+        android:background="#BBBBBB" />
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_49"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/rb_home_select"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="@color/main_tab_text_selector"
+            android:textSize="@dimen/sp_10" />
+
+        <RadioButton
+            android:id="@+id/rb_officialAccount"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/rb_account_select"
+            android:gravity="center"
+            android:text="公众号"
+            android:textColor="@color/main_tab_text_selector"
+            android:textSize="@dimen/sp_10" />
+
+        <RadioButton
+            android:id="@+id/rb_third"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/rb_account_select"
+            android:gravity="center"
+            android:text="项目"
+            android:textColor="@color/main_tab_text_selector"
+            android:textSize="@dimen/sp_10" />
+
+    </RadioGroup>
+
+    <!--为了添加消息提醒-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_49"
+        android:layout_alignParentBottom="true"
+        android:background="#00000000"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:visibility="invisible" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_myproject"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</RelativeLayout>

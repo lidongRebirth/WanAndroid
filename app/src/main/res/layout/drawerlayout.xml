@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_gravity="left">
+    <ImageView
+        android:id="@+id/iv_background"
+        android:src="@drawable/item_pic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_196"
+        android:scaleType="centerCrop"/>
+    <ImageView
+        android:id="@+id/iv_headicon"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_80"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/dp_156"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/ic_header"/>
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:text="用户名"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/iv_headicon"
+        app:layout_constraintLeft_toRightOf="@id/iv_headicon" />
+
+    <RelativeLayout
+        android:id="@+id/rel_mycollection"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        app:layout_constraintTop_toBottomOf="@id/iv_headicon"
+        android:layout_marginTop="9dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingRight="15dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/mine_collect"
+            android:drawablePadding="8dp"
+            android:drawableRight="@mipmap/rightarrows"
+            android:text="收藏"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        app:layout_constraintTop_toBottomOf="@id/rel_mycollection"
+        android:background="@color/line" />
+    <RelativeLayout
+        android:id="@+id/rel_set"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        app:layout_constraintTop_toBottomOf="@id/view1"
+        android:layout_marginTop="9dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingRight="15dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/mine_set"
+            android:drawablePadding="8dp"
+            android:drawableRight="@mipmap/rightarrows"
+            android:text="设置"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        app:layout_constraintTop_toBottomOf="@id/rel_set"
+        android:background="@color/line" />
+    <RelativeLayout
+        android:id="@+id/rel_about"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        app:layout_constraintTop_toBottomOf="@id/view2"
+        android:layout_marginTop="9dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/ic_aboutus"
+            android:drawablePadding="8dp"
+            android:drawableRight="@mipmap/rightarrows"
+            android:text="关于我们"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

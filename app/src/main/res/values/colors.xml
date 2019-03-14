@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--基础颜色-->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#dfdfdf</color>
+
+-
+    <!--状态栏颜色-->
+    <color name="statusColor">#3F51B5</color>
+
+    <!--TabLayout相关颜色-->
+    <color name="tabIndicatorColor">#FF895D</color>     <!--被选中底部线条颜色-->
+    <color name="tabSelectedTextColor">#FF895D</color>  <!--被选中字体颜色-->
+    <color name="tabBackgroundColor">#3F51B5</color>    <!--TabLayout背景颜色-->
+    <color name="tabTextColor">#FFFFFF</color>          <!--TabLayout字体颜色-->
+
+    <!--背景颜色-->
+    <color name="line">#f5f5f5</color>
+
+
+
+</resources>
